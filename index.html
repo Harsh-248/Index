@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;700&display=swap" rel="stylesheet">
+    <title>Gym....</title>
+
+</head>
+<style>
+    body {    /*CSS reset*/
+        font-family: 'Baloo Bhai 2';
+        font-weight: bold;
+        margin: 0px;
+        padding: 0px;
+        color: white;
+        background: url("people-2572265_1920.jpg");
+    }
+
+
+
+    .left { /*To place the logo & text under logo*/
+        display: inline-block;
+        position: absolute;
+        left: 65px;
+        top: 18px;
+        
+       /* border: 2px solid blueviolet;*/
+    }
+
+    .left img {         /*For logo on the top left*/
+        width: 69px;
+        height: 45px;
+        padding: 1px;
+
+        top: 0px;
+        filter: invert(60%);
+        font-size: 0px;
+    }
+
+    .left div {  /* For the text which is under the logo*/
+        text-align: center;
+        line-height: 25px;
+        height: auto;
+        font-size: 29px;
+        /* font-family: 'Baloo Bhai 2';*/
+
+    }
+
+
+    .mid {  /* for the middle navigation bar*/
+        display: block;
+        text-align: center;
+        top: 0px;
+        width: 45%;
+        margin: 29px auto;
+        /*border: 2px solid yellow;*/
+    }
+
+
+    .right { /*For right side buttons*/
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        /* border: 2px solid green;*/
+
+    }
+
+    .btn { /*Design of right side buttons*/
+        margin: 0px 9px;
+        padding: 4px 14px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        border: 2px solid grey;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2';
+    }
+
+    .btn:hover {  /*This will lead to change the effect or background color when the mouse hover on the buttons*/
+        background-color: gray;
+    }
+
+    .navbar { /*Middle navigation bar*/
+        color: white;
+        display: inline-block;
+    }
+
+    .navbar li { /*color,fontsize,fontstyle of the middle navigation bar*/
+        display: inline-block;
+        color: grey;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.ac { /* When the mouse hover on the buttons of navigation bars it will lead to change color,an underline*/
+        color: gray;
+        text-decoration: underline;
+        font-size: small;
+        font: fixed;
+    }
+
+    .container { /* A container in which we will get the details of the user*/
+        border: 2px solid white;
+        margin: 250px 120px;
+        padding: 25px;
+        width: 28%;
+        border-radius: 28px;
+    }
+
+    .form-grp input {  /* When taking input from the user, this used to place the "INPUT text" in a center,font size,etc,..*/
+        text-align: center;
+        display: block;
+        width: 408px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+        font-family: 'Baloo Bhai 2';
+    }
+
+    .container h2 { /*Heading of the container*/
+        text-align: center;
+    }
+
+    .container button { /* Button to submit the details */
+        display: block;
+        width: 24%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="head">
+                             <!--Left button logo-->
+        <div class="left">
+            <img src="gym-logo-7291149_1280.png" alt="Mkc">
+            <div>Rajat Gym</div>
+        </div>
+                             <!-- mid navigation bar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="ac">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FITNESS CENTER</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+                                <!-- Right buttons-->
+        <div class="right">
+            <button class="btn"> Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">             <!-- This is where container -->
+        <h2>
+            Join the best gym of Jodhpur   <!-- Heading of the container -->
+        </h2>
+        <form action="noaction.php">
+            <div class="form-grp">                        
+                <input type="text" name="" placeholder="Enter name"> <!-- The types of input text(details) we want-->
+            </div>
+            <div class="form-grp">
+                <input type="text" name="" placeholder="Enter Age">
+            </div>
+            <div class="form-grp">
+                <input type="text" name="" placeholder="Enter Gender">
+            </div>
+            <div class="form-grp">
+                <input type="text" name="" placeholder="Enter Email">
+            </div>
+            
+            <button class="btn">Submit</button>  <!-- Submit button-->
+        </form>
+    </div>
+</body>
+
+</html>
